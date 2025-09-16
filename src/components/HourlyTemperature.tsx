@@ -7,7 +7,7 @@ import { format } from 'date-fns';
 interface HourlyTemperatureProps {
     data: ForecastData
 }
-const HourlyTemperature = ({data}: HourlyTemperatureProps) => {
+const HourlyTemperature:React.FC<HourlyTemperatureProps> = ({data}) => {
 
     const chartData = data.list.slice(0, 8).map((item) => ({
         time: format(new Date(item.dt * 1000), "HH:mm"),
