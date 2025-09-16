@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CityPage = () => {
+const CityPage: React.FC = () => {
   return (
     <div>CityPage</div>
   )

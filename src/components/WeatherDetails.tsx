@@ -1,8 +1,6 @@
 import type { WeatherData } from '@/api/Types'
 import { Compass, Gauge, Sunrise, Sunset } from 'lucide-react';
 import { format } from 'date-fns';
-
-import React from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 
 interface WeatherDetailsProps {
